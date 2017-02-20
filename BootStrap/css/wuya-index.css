@@ -11,11 +11,12 @@
 	margin-top: 40px;
 }
 
-.wuya-nav{
-	heigth:50px;
-}
-
 a:hover{
 	cursor: pointer;
 	color: orange;
+}
+
+.piece{
+	border-bottom: solid grey 1px;
+	margin-bottom: 10px;
 }
