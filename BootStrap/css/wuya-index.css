@@ -1,0 +1,21 @@
+.section-info {
+    background-color: #5bc0de !important;
+    color: #ffffff;
+}
+.section {
+    position: relative;
+    padding: 35px 0;
+}
+
+.hottopic{
+	margin-top: 40px;
+}
+
+.wuya-nav{
+	heigth:50px;
+}
+
+a:hover{
+	cursor: pointer;
+	color: orange;
+}

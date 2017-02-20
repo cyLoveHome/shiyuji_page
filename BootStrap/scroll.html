@@ -1,0 +1,40 @@
+<pre name="code" class="html">
+<!doctype html>  
+<html lang="zh-CN">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>下拉刷新</title>  
+    <script src="js/jquery.min.js"></script>  
+    <style>  
+        *{ margin: 0;padding: 0;}  
+    </style>  
+</head>  
+<body>  
+<div id="container">
+	<div style="height: 800px;border: dashed;"></div>
+    <h1>1</h1> 
+    <h1>22</h1>
+    <h1>333</h1>
+</div>  
+<div id="loading" style="position:fixed;bottom:0;left:0;width:100%;line-height:20px;font-size:16px;color:#fff;text-align:center;display:none;">
+	<img src="images/waiting.gif" width="20px" height="20px"/>
+</div>   
+<script>
+	var num = 1;
+    //滚动到页面底部时，自动加载更多  
+    $(window).scroll(function(){                
+        var scrollh = $(document).height();  
+        var scrollTop=Math.max(document.documentElement.scrollTop||document.body.scrollTop);  
+        if((scrollTop + $(window).height()) >= scrollh){  
+            $("#loading").show(); 
+            var inter = setTimeout(function(){  
+            		var str = "<h1>"+num+"<h1>";
+               	$("#container").append(str);
+                num++;
+                $("#loading").hide(); 
+            },2000);   
+        }  
+    });  
+</script>    
+</body>  
+</html>  

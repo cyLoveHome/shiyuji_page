@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="ico/favicon.ico">
+
+		<title>Signin Template for Bootstrap</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/cikonss.css" />
+		<link rel="stylesheet" href="css/button.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />
+
+		<script src="js/jquery.min.js"></script>
+
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.banner {
+				position: relative;
+				overflow: auto;
+				height: 180px;
+			}
+			
+			.banner li {
+				list-style: none;
+			}
+			
+			.banner ul li {
+				float: left;
+			}
+			
+			hr {
+				height: 20px;
+			}
+			
+			body {
+				margin: auto 0;
+			}
+			.slide{
+				border: dashed;
+				width: 100%;
+				overflow: hidden;
+				height: 50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--表单-->
+		<h1>表单</h1>
+		<div class="container">
+			<form class="form-signin" role="form">
+				<h2 class="form-signin-heading">Please sign in</h2>
+				<input type="email" class="form-control" placeholder="Email address" required autofocus>
+				<input type="password" class="form-control" placeholder="Password" required>
+				<div class="checkbox">
+					<label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+				</div>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+			</form>
+		</div>
+		<!--表单结束 -->
+		<hr />
+		<!--图片轮播-->
+		<h1>图片轮播</h1>
+		<div class="banner">
+			    <ul>
+			        <li>
+				        	<div class="slide" style="background-image: url(images/3.png);">
+				        		This is a slide.
+				        	</div>
+			        </li>
+			        <li>
+				        	<div class="slide" style="background-image: url(images/4.png);">
+				        		This is another slide.
+				        	</div>
+			        </li>
+			        <li>
+				        	<div class="slide" style="background-image: url(images/dust.png);">
+				        		
+				        	</div>
+			        </li>
+			    </ul>
+		</div>
+		<!--图片轮播结束-->
+		<hr />
+		<!--button-->
+		<h1>形状与尺寸</h1>
+		<a href="#" class="button button-tiny">Go</a>
+		<a href="#" class="button button-rounded button-tiny">Go</a>
+		<a href="#" class="button button-pill button-tiny">Go</a>
+		<button class="button button-square button-tiny"><i class="fa fa-plus"></i></button>
+		<button class="button button-box button-tiny"><i class="fa fa-plus"></i></button>
+		<button class="button button-circle button-tiny"><i class="fa fa-plus"></i></button>
+
+		<a href="#" class="button button-primary button-small">Go</a>
+		<a href="#" class="button button-primary button-rounded button-small">Go</a>
+		<a href="#" class="button button-primary button-pill button-small">Go</a>
+		<button class="button button-primary button-square button-small"><i class="fa fa-plus"></i></button>
+		<button class="button button-primary button-box button-small"><i class="fa fa-plus"></i></button>
+		<button class="button button-primary button-circle button-small"><i class="fa fa-plus"></i></button>
+
+		<a href="#" class="button button-action">Go</a>
+		<a href="#" class="button button-action button-rounded">Go</a>
+		<a href="#" class="button button-action button-pill">Go</a>
+		<button class="button button-action button-square"><i class="fa fa-plus"></i></button>
+		<button class="button button-action button-box"><i class="fa fa-plus"></i></button>
+		<button class="button button-action button-circle"><i class="fa fa-plus"></i></button>
+
+		<a href="#" class="button button-highlight button-large">Go</a>
+		<a href="#" class="button button-highlight button-rounded button-large">Go</a>
+		<a href="#" class="button button-highlight button-pill button-large">Go</a>
+		<button class="button button-highlight button-square button-large"><i class="fa fa-plus"></i></button>
+		<button class="button button-highlight button-box button-large"><i class="fa fa-plus"></i></button>
+		<button class="button button-highlight button-circle button-large"><i class="fa fa-plus"></i></button>
+
+		<a href="#" class="button button-caution button-jumbo">Go</a>
+		<a href="#" class="button button-caution button-rounded button-jumbo">Go</a>
+		<a href="#" class="button button-caution button-pill button-jumbo">Go</a>
+		<button class="button button-caution button-square button-jumbo"><i class="fa fa-plus"></i></button>
+		<button class="button button-caution button-box button-jumbo"><i class="fa fa-plus"></i></button>
+		<button class="button button-caution button-circle button-jumbo"><i class="fa fa-plus"></i></button>
+
+		<a href="#" class="button button-royal button-giant">Go</a>
+		<a href="#" class="button button-royal button-rounded button-giant">Go</a>
+		<a href="#" class="button button-royal button-pill button-giant">Go</a>
+		<button class="button button-royal button-square button-giant"><i class="fa fa-plus"></i></button>
+		<button class="button button-royal button-box button-giant"><i class="fa fa-plus"></i></button>
+		<button class="button button-royal button-circle button-giant"><i class="fa fa-plus"></i></button>
+
+		<h1>3D 按钮</h1>
+		<button class="button button-3d button-box button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+		<a href="#" class="button button-3d button-primary button-rounded">Check out the new site!</a>
+		<a href="#" class="button button-3d button-action button-pill">Visit Us!</a>
+		<button class="button button-3d button-action button-circle button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+		<a href="#" class="button button-3d button-caution"><i class="fa fa-camera"></i> Go</a>
+		<a href="#" class="button button-3d button-royal">Say Hi!</a>
+
+		<h1>突起样式的按钮</h1>
+		<a href="#" class="button button-raised button-primary button-pill">Visit Us!</a>
+		<button class="button button-raised button-action button-circle button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+		<a href="#" class="button button-raised button-caution"><i class="fa fa-camera"></i> Go</a>
+		<a href="#" class="button button-raised button-royal">Say Hi!</a>
+		<a href="#" class="button button-raised button-pill button-inverse">Say Hi!</a>
+
+		<h1>长阴影</h1>
+		<button class="button button-primary button-box button-giant button-longshadow-right">
+		    <i class="fa fa-twitter"></i>
+		  </button>
+
+		<button class="button button-caution button-box button-raised button-giant button-longshadow">
+		    <i class="fa fa-google-plus"></i>
+		  </button>
+
+		<button class="button button-action button-box button-giant button-longshadow-left">
+		    <i class="fa fa-share-alt"></i>
+		  </button>
+
+		<button class="button button-highlight button-box button-giant button-longshadow-right button-longshadow-expand">
+		    <i class="fa fa-rss"></i>
+		  </button>
+
+		<button class="button button-primary button-circle button-giant button-longshadow">
+		    <i class="fa fa-gear"></i>
+		  </button>
+
+		<h1>光晕</h1>
+		<a href="#" class="button button-glow button-rounded button-raised button-primary">Go</a>
+		<a href="#" class="button button-glow button-border button-rounded button-primary">Go</a>
+		<button class="button button-glow button-circle button-action button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+		<a href="#" class="button button-glow button-rounded button-highlight">Go</a>
+		<a href="#" class="button button-glow button-rounded button-caution">Go</a>
+		<a href="#" class="button button-glow button-rounded button-royal">Go</a>
+
+		<h1>带下拉菜单的按钮</h1>
+		<span class="button-dropdown" data-buttons="dropdown">
+		    <button class="button button-rounded">
+		      Select Me <i class="fa fa-caret-down"></i>
+		    </button>
+		
+		    <ul class="button-dropdown-list">
+		      <li><a href="#">Option Link 1</a></li>
+		      <li><a href="#">Option Link 2</a></li>
+		      <li class="button-dropdown-divider">
+		        <a href="#">Option Link 3</a>
+		      </li>
+		    </ul>
+		  </span>
+
+		<span class="button-dropdown button-dropdown-primary" data-buttons="dropdown">
+		    <button class="button button-primary button-large">
+		      <i class="fa fa-bars"></i> Select Me
+		    </button>
+		
+		    <ul class="button-dropdown-list is-below">
+		      <li><a href="#"><i class="fa fa-heart-o"></i> Option Link 1</a></li>
+		      <li><a href="#">Option Link 2</a></li>
+		      <li class="button-dropdown-divider">
+		        <a href="#">Option Link 3</a>
+		      </li>
+		    </ul>
+		  </span>
+
+		<span class="button-dropdown button-dropdown-action" data-buttons="dropdown">
+		    <button class="button button-action">
+		      Select Me <i class="fa fa-caret-up"></i>
+		    </button>
+		
+		    <ul class="button-dropdown-list is-above">
+		      <li><a href="#">Option Link 1</a></li>
+		      <li><a href="#">Option Link 2</a></li>
+		      <li class="button-dropdown-divider">
+		        <a href="#">Option Link 3</a>
+		      </li>
+		    </ul>
+		  </span>
+
+		<span class="button-dropdown button-dropdown-plain" data-buttons="dropdown">
+		    <button class="button button-caution button-pill">
+		      Select Me <i class="fa fa-caret-down"></i>
+		    </button>
+		
+		    <ul class="button-dropdown-list">
+		      <li><a href="#">Option Link 1</a></li>
+		      <li class="button-dropdown-divider">
+		        <a href="#">Option Link 2</a>
+		      </li>
+		      <li>
+		        <a href="#">Option Link 3</a>
+		      </li>
+		    </ul>
+		  </span>
+
+		<span class="button-dropdown button-dropdown-inverse" data-buttons="dropdown">
+		    <a href="#" class="button button-inverse">
+		        <i class="fa fa-envelope"></i> Select Me <i class="fa fa-caret-down"></i>
+		    </a>
+		
+		    <ul class="button-dropdown-list is-below">
+		      <li><a href="#">Option Link 1</a></li>
+		      <li class="button-dropdown-divider">
+		        <a href="#">Option Link 2</a>
+		      </li>
+		      <li>
+		        <a href="#">Option Link 3</a>
+		      </li>
+		    </ul>
+		  </span>
+
+		<h1>按钮组</h1>
+		<div class="button-group">
+			<button type="button" class="button button-primary">Option 1</button>
+			<button type="button" class="button button-primary">Option 2</button>
+			<button type="button" class="button button-primary">Option 3</button>
+
+			<!-- DROPDOWN MENU -->
+			<span class="button-dropdown button-dropdown-primary" data-buttons="dropdown">
+      <a href="#" class="button button-primary"> Select Me <i class="fa fa-caret-down"></i></a>
+
+      <ul class="button-dropdown-list is-below">
+        <li><a href="#">Option Link 1</a></li>
+        <li><a href="#">Option Link 2</a></li>
+        <li class="button-dropdown-divider"><a href="#">Option Link 3</a></li>
+      </ul>
+    </span>
+		</div>
+
+		<div class="button-group">
+			<button type="button" class="button button-pill button-action">Option 1</button>
+			<button type="button" class="button button-pill button-action">Option 2</button>
+			<button type="button" class="button button-pill button-action">Option 3</button>
+		</div>
+
+		<div class="button-group">
+			<button type="button" class="button button-royal button-rounded button-raised">Option 1</button>
+			<button type="button" class="button button-royal button-rounded button-raised">Option 2</button>
+			<button type="button" class="button button-royal button-rounded button-raised">Option 3</button>
+		</div>
+
+		<h1>堆叠按钮</h1>
+		<a href="#" class="button button-block button-rounded button-large">Go</a>
+		<a href="#" class="button button-block button-rounded button-primary button-large">Go</a>
+		<a href="#" class="button button-block button-rounded button-action button-large">Go</a>
+		<a href="#" class="button button-block button-rounded button-highlight button-large">Go</a>
+		<a href="#" class="button button-block button-rounded button-caution button-large">Go</a>
+		<a href="#" class="button button-block button-rounded button-royal button-large">Go</a>
+
+		<h1>额外的环绕效果</h1>
+		<span class="button-wrap">
+		    <button class="button button-circle">
+		      <i class="fa fa-cloud"></i>
+		    </button>
+		  </span>
+
+		<span class="button-wrap">
+		    <button class="button button-circle button-raised button-primary">
+		      <i class="fa fa-cloud"></i>
+		    </button>
+		  </span>
+
+		<span class="button-wrap">
+		    <a href="#" class="button button-pill ">Go</a>
+		  </span>
+		<span class="button-wrap">
+		    <a href="#" class="button button-pill button-raised button-primary">Go</a>
+		  </span>
+
+		<h1>表单按钮</h1>
+
+		<input type="submit" value="Go" class="button button-pill button-primary">
+		<button class="button button-pill button-primary">Go</button>
+
+		<!-- DISABLED BUTTONS -->
+		<input disabled="" type="submit" value="Go" class="button button-pill button-primary">
+		<button disabled="" class="button  button-pill button-primary">Go</button>
+		<button disabled="" class="button button-pill button-flat-primary">Go</button>
+		<a href="#" class="button disabled button-pill button-primary ">Go</a>
+
+		<h1>各种文字样式</h1>
+
+		<a href="#" class="button button-uppercase button-primary">uppercase</a>
+		<a href="#" class="button button-lowercase button-primary ">lowercase</a>
+		<a href="#" class="button button-capitalize button-primary">capitalize</a>
+		<a href="#" class="button button-small-caps button-primary">small caps</a>
+		<!--button结束-->
+		<hr />
+
+		<svg viewBox="0 0 20 20" class="Icon Icon--message" style="height:20px;width:20px;" width="20" height="20" aria-hidden="true">
+			<title></title>
+			<g>
+				<path d="M9 0C3.394 0 0 4.13 0 8c0 1.654.522 3.763 2.014 5.566.314.292.518.82.454 1.17-.165 1.488-.842 1.905-.842 1.905-.328.332.105.67.588.582 1.112-.2 2.07-.58 3.526-1.122.4-.202.464-.147.78-.078C11.524 17.764 18 14 18 8c0-3.665-3.43-8-9-8z" />
+				<path d="M19.14 9.628c.758.988.86 2.01.86 3.15 0 1.195-.62 3.11-1.368 3.938-.21.23-.354.467-.308.722.12 1.073.614 1.5.614 1.5.237.24-.188.563-.537.5-.802-.145-1.494-.42-2.545-.81-.29-.146-.336-.106-.563-.057-2.043.712-4.398.476-6.083-.926 5.964-.524 8.726-3.03 9.93-8.016z" />
+			</g>
+		</svg>
+
+		
+		<hr />
+
+	</body>
+	<!--轮播-->
+	<script src="js/unslider.js"></script>
+	<!--弹出框-->
+	<script src="js/messenger/messenger.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		<!--轮播调用-->
+		$(function() {
+			$('.banner').unslider();
+		});
+	</script>
+
+</html>

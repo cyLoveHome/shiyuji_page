@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>skip up</title>
+		<link href="css/style.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+				margin-top: 20px;
+				height: 2000px;
+			}
+			.tt{
+				height:800px;
+				border: dashed;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<h2 class="sub">Make your stuff stick!</h2>
+			<section class="container clearfix tt">
+				<div class="row">
+					<div class="left-col">
+						<p class="lead">
+							Ever wanted to <strong>pin</strong> something to the side of a text? Ever needed a subtle sticky element to quietly hang around as you scroll down?
+						</p>
+
+					</div>
+					<div class="right-col">
+						<div class="pinned note-container">
+							<div class="note">
+								<h3>Pin it!</h3>
+								<p>Great for pinned navigations — or just about anything you want to stick.</p>
+								<p>Developed by
+									<a href="http://www.webpop.com">Webpop</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.pin.js"></script>
+	<script type="text/javascript">
+		$(".pinned").pin({
+			containerSelector: ".tt"
+//			containerSelector: ".container"
+				//    , minWidth: 940
+		});
+	</script>
+
+</html>
