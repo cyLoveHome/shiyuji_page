@@ -26,7 +26,9 @@
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-6">
-                  <input type="password" class="form-control" id="password" placeholder="请输入密码"><a class="btn btn-primary" id="showPwd">显示密码</a>
+                  <input type="password" class="form-control" id="password" placeholder="请输入密码">
+                  <input type="text" class="form-control" style="display: none;" id="passwordShow" placeholder="请输入密码">
+                  <input id="showPwd" type="checkbox"/><span id="showPwdTxt">显示密码</span>
                   <span class="alert-danger">用户名不存在</span>
                 </div>
               </div>
@@ -52,19 +54,33 @@
     </div>
 <script type="text/javascript">
 	$(function () {
-		$("[data-toggle='tooltip1']").tooltip();
-		$("[data-toggle='popover']").popover();
-		$("#userName").onkeyup(function(){
+		$("#userName").keyup(function(){
 			var val =  $(this).val();
 			console.debug("showValidate keyup :"+val);
-		)};
-		
-		$("#showPwd").click(function(){
-			console.debug("showPassword clicked");
-//			var type = $("#password").attr("type");
-//			console.debug("showPassword type :" + type );
-//			$("#password").attr("type","text");
 		});
+		//
+		$("#showPwd").bind({
+		     click: function(){
+		     console.debug($("#showPwd").attr("checked"));
+		      if($("#showPwd").attr("checked")){
+		      	console.debug("隐藏");
+		        $("#password").val($("#passwordShow").val());
+		        $("#passwordShow").hide();
+		        $("#password").show();
+		        $("#showPwd").removeAttr("checked");
+		        $("#showPwdTxt").text("隐藏密码");
+		      }else{
+		      	console.debug("显示");
+		        $("#passwordShow").val($("#password").val());
+		        $("#password").hide();
+		        $("#passwordShow").show();
+		        	$("#showPwd").attr("checked","true");
+		        	$("#showPwdTxt").text("显示密码");
+		      }
+		     }
+	    });
+		
+		
 	});
 	
 </script>
