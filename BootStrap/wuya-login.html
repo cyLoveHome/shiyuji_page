@@ -4,7 +4,7 @@
     <script type="text/javascript" src="js/jquery.min.js" ></script>
     <script type="text/javascript" src="js/bootstrap.min.js" ></script>
     <link rel="stylesheet" href="css/font-awesome.css" />
-    <link rel="stylesheet" href="css/regiester.css" />
+    <link rel="stylesheet" href="css/wuya-loginin.css" />
     <title> 注册</title>
   </head>
  <body>
@@ -20,25 +20,27 @@
             <form class="form-horizontal" role="form">
               <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-6">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  <input type="text" class="form-control" id="userName" placeholder="请输入用户名" onfocus="showValidate();">
+                  <span class="alert-danger">用户名不存在</span>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-6">
-                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  <input type="password" class="form-control" id="password" placeholder="请输入密码"><a class="btn btn-primary" id="showPwd">显示密码</a>
+                  <span class="alert-danger">用户名不存在</span>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-6">
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox">Remember me</label>
+                      <input type="checkbox">下次自动登录</label>
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-6">
-                  <button type="submit" class="btn btn-lg btn-primary">Sign in</button>
+                  <button type="submit" class="btn btn-lg btn-primary btn-block">登录</button>
                 </div>
               </div>
             </form>
@@ -52,7 +54,19 @@
 	$(function () {
 		$("[data-toggle='tooltip1']").tooltip();
 		$("[data-toggle='popover']").popover();
+		$("#userName").onkeyup(function(){
+			var val =  $(this).val();
+			console.debug("showValidate keyup :"+val);
+		)};
+		
+		$("#showPwd").click(function(){
+			console.debug("showPassword clicked");
+//			var type = $("#password").attr("type");
+//			console.debug("showPassword type :" + type );
+//			$("#password").attr("type","text");
+		});
 	});
+	
 </script>
 
 </body></html>
