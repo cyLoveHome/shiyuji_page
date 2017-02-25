@@ -13,17 +13,23 @@ $(function () {
 		        $("#passwordShow").hide();
 		        $("#password").show();
 		        $("#showPwd").removeAttr("checked");
-		        $("#showPwdTxt").text("隐藏密码");
+//		        $("#showPwdTxt").text("隐藏密码");
 		      }else{
 		      	console.debug("显示");
 		        $("#passwordShow").val($("#password").val());
 		        $("#password").hide();
 		        $("#passwordShow").show();
 		        	$("#showPwd").attr("checked","true");
-		        	$("#showPwdTxt").text("显示密码");
+//		        	$("#showPwdTxt").text("显示密码");
 		      }
 		     }
 	    });
 		
 		
 });
+
+
+function changeImg(){
+		var img = document.getElementById("img");  
+		img.src = "http://192.168.3.122:8080/wuya/verifycode/generateImg?date=" + new Date();;
+	} 
