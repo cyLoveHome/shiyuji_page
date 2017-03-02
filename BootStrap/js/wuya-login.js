@@ -31,5 +31,5 @@ $(function () {
 
 function changeImg(){
 		var img = document.getElementById("img");  
-		img.src = "http://192.168.3.122:8080/wuya/verifycode/generateImg?date=" + new Date();;
+		img.src = "http://localhost:8080/wuya/verifycode/generateImg?date=" + new Date();;
 	} 

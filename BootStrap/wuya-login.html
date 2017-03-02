@@ -5,8 +5,8 @@
     <script type="text/javascript" src="js/bootstrap.min.js" ></script>
     <script type="text/javascript" src="js/wuya-login.js" ></script>
     <link rel="stylesheet" href="css/font-awesome.css" />
-    <link rel="stylesheet" href="css/wuya-loginin.css" />
-    <title>登录</title>
+    <link rel="stylesheet" href="css/wuya-login-reg-common.css" />
+    <title>无涯登录</title>
   </head>
  <body>
     <div class="cover">
@@ -33,10 +33,10 @@
               
               <div class="form-group">
                 <div class="col-sm-offset-3 col-sm-6">
-                		<input type="password" class="form-control" style="display: inline-block;" id="password" placeholder="请输入验证码">
+                		<input type="text" class="form-control" style="display: inline-block;" id="password" placeholder="请输入验证码">
                 		<div class="pull-left">
                 			<a href='#' onclick="javascript:changeImg()">
-                				<img id="img" src="http://192.168.3.122:8080/wuya/verifycode/generateImg" />
+                				<img id="img" src="http://localhost:8080/wuya/verifycode/generateImg" />
                 			</a>
 							<a href='#' onclick="javascript:changeImg()" class="btn btn-primary">看不清</a>
                 		</div>
@@ -64,7 +64,7 @@
                 <div class="col-sm-offset-3 col-sm-6">
                 	<div class="pull-left">
 	                     <a style="color: #D1EEFC;cursor: pointer;">忘记密码</span>
-	                     <a style="color: #D1EEFC;cursor: pointer;margin-left: 10px;">没有账号？前往注册</span>
+	                     <a style="color: #D1EEFC;cursor: pointer;margin-left: 10px;" href="wuya-reg.html">没有账号？前往注册</span>
                      </div>
                 </div>
               </div>
