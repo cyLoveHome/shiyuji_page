@@ -1,0 +1,46 @@
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+        <style>
+        	.queTitle{
+        		width: 100%;
+        		height: 45px;
+        		margin-bottom: 35px;
+        	}
+        	.bg{
+        		width: 100%;
+        		height: 30px;
+        		display: block;
+        		background-color: rgba(128, 128, 128, 0.24);
+        	}
+        	.textInfo{
+        		border-radius: 0px;
+        	}
+        </style>
+    </head>
+    <body>
+    	<div class="section">
+			<div class="container" >
+				<div class="row">
+					<div class="col-md-12">
+						<input type="text" placeholder="有什么问题，快在这里发布吧!" class="queTitle"/>
+				        	<form role="form">
+								<div class="form-group">
+									<span class="bg"></span>
+									<textarea class="form-control textInfo" rows="8" id="reportCause" placeholder="这个问题是否还要相关描述信息，写在这里（选填）"></textarea>
+								</div>
+							</form>
+							<a class="btn" style="width: 100px;margin-left: 1px;" onclick="findUser('${user.uId}');">发布</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    	
+        
+	</body>
+</html>
